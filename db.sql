@@ -37,8 +37,8 @@ CREATE TABLE garages (
  PRIMARY KEY (id_garage)
 );
 
-INSERT INTO garages
-VALUES (NULL,'Červená','Pučery 46');
+INSERT INTO garages (color, adress)
+VALUES ('Červená','Pučery 46');
 
 DESCRIBE garages;
 
