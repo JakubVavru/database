@@ -24,13 +24,17 @@ VALUES ('Jakub','Vávrů',16,'jakub.vavru@student.ossp.cz');
 
 CREATE TABLE garages (
  id_garage int NOT NULL AUTO_INCREMENT, /*AUTO_INCREMENT sám vytcáří čísla postupně*/
- color varchar(255),
+ kapacity int,
+ garage_name varchar(255),
+ telephone int,
+ email varchar(255),
+ garage_description varchar(255),
  adress varchar(255),
  PRIMARY KEY (id_garage)
 );
 
-INSERT INTO garages (color, adress)
-VALUES ('Červená','Pučery 46');
+INSERT INTO garages (kapacity, garage_name, telephone, email, garage_description, adress)
+VALUES (2,'Tonda',776542345,'jakub.vavru@student.ossp.cz','malá, zelená','Pučery 46');
 
 DESCRIBE garages;
 
