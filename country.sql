@@ -69,3 +69,25 @@ VALUES ('Chile','CHL',NULL);
 
 INSERT INTO countries (name,code,description) 
 VALUES ('Portugal','PRT',NULL);
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+ALTER TABLE covid
+ADD total_death int;
+
+UPDATE countries
+SET total_death = 7499
+WHERE id_country = 2;
+
+UPDATE countries
+SET total_death = 0
+WHERE id_country = 16;
+
+UPDATE countries
+SET total_death = 666
+WHERE id_country = 3;
+
+UPDATE countries
+SET total_death = 69420
+WHERE id_country = 5;
