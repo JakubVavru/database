@@ -91,3 +91,19 @@ WHERE id_country = 3;
 UPDATE countries
 SET total_death = 69420
 WHERE id_country = 5;
+
+UPDATE countries
+SET total_death = 5003
+WHERE id_country = 2;
+
+UPDATE countries
+SET total_death = 9888
+WHERE id_country = 16;
+
+UPDATE countries
+SET total_death = 20000
+WHERE id_country = 3;
+
+UPDATE countries
+SET total_death = 42069
+WHERE id_country = 5;
