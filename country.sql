@@ -72,7 +72,6 @@ VALUES ('Portugal','PRT',NULL);
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-
 ALTER TABLE covid
 ADD total_death int;
 
@@ -94,16 +93,46 @@ WHERE id_country = 5;
 
 UPDATE countries
 SET total_death = 5003
-WHERE id_country = 2;
+WHERE id_country = 6;
 
 UPDATE countries
 SET total_death = 9888
-WHERE id_country = 16;
+WHERE id_country = 12;
 
 UPDATE countries
 SET total_death = 20000
-WHERE id_country = 3;
+WHERE id_country = 8;
 
 UPDATE countries
 SET total_death = 42069
-WHERE id_country = 5;
+WHERE id_country = 9;
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+SELECT *
+FROM countries
+WHERE total_death >= 4000;
+
+SELECT *
+FROM countries
+WHERE total_death >= 1000 AND total_death <= 6000;
+
+SELECT *
+FROM countries
+WHERE total_death <= 1000;
+
+SELECT *
+FROM countries
+WHERE total_death >= 4000;
+
+SELECT *
+FROM countries
+ORDER BY code ASC;
+
+SELECT *
+FROM countries
+ORDER BY code ASC, total_death ASC;
+
+SELECT *
+FROM countries
+WHERE total_death <= 1000 or total_death >= 5000;
