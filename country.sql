@@ -141,7 +141,7 @@ WHERE total_death <= 1000 or total_death >= 5000;
 
 SELECT *
 FROM countries
-WHERE name LIKE 'U%';
+WHERE name LIKE 'C%';
 
 SELECT *
 FROM countries
