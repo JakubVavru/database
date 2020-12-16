@@ -136,3 +136,21 @@ ORDER BY code ASC, total_death ASC;
 SELECT *
 FROM countries
 WHERE total_death <= 1000 or total_death >= 5000;
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+SELECT *
+FROM countries
+WHERE name LIKE 'U%';
+
+SELECT *
+FROM countries
+WHERE name LIKE '%a';
+
+SELECT *
+FROM countries
+WHERE name LIKE 'republic' OR name LIKE 'Republic';
+
+SELECT *
+FROM countries
+WHERE name LIKE '%ar%';
