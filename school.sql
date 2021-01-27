@@ -36,10 +36,10 @@ CREATE TABLE teacher (
   lastname varchar(255) NOT NULL,
   description text,
   email varchar(255) NOT NULL,
-  PRIMARY KEY (id_country)
+  PRIMARY KEY (id_teacher)
 );
 
-INSERT INTO students (firstname,lastname,description,email) 
+INSERT INTO teacher (firstname,lastname,description,email) 
 VALUES ('Martin','Kokeš','BEST','martin.kokes@ossp.cz');
-INSERT INTO students (firstname,lastname,description,email) 
+INSERT INTO teacher (firstname,lastname,description,email) 
 VALUES ('Lenka','Sklenářová','Numero 2','lunka.sklenarova@ossp.cz');
