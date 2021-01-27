@@ -1,7 +1,7 @@
 CREATE DATABASE carshop;
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
 CREATE TABLE cars (
- id_car int NOT NULL AUTO_INCREMENT,
+ id_car int AUTO_INCREMENT,
  manifacturer varchar(255) ,
  model varchar(255)
  PRIMARY KEY (id_car)
