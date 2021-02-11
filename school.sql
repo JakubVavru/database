@@ -36,10 +36,33 @@ CREATE TABLE teacher (
   lastname varchar(255) NOT NULL,
   description text,
   email varchar(255) NOT NULL,
-  PRIMARY KEY (id_teacher)
+  PRIMARY KEY (id_country)
 );
 
-INSERT INTO teacher (firstname,lastname,description,email) 
+INSERT INTO students (firstname,lastname,description,email) 
 VALUES ('Martin','Kokeš','BEST','martin.kokes@ossp.cz');
-INSERT INTO teacher (firstname,lastname,description,email) 
+INSERT INTO students (firstname,lastname,description,email) 
 VALUES ('Lenka','Sklenářová','Numero 2','lunka.sklenarova@ossp.cz');
+
+CREATE TABLE subjects (
+  id_subjects int AUTO_INCREMENT,
+  name varchar(255) NOT NULL,
+  description text,
+  PRIMARY KEY (id_subjects)
+);
+
+INSERT INTO students (name,description) 
+VALUES ('Anglický Jazyk','Už umím nevím proč se to učím');
+INSERT INTO students (name,description) 
+VALUES ('Webové programování','Nejlepší předmět 10/10');
+INSERT INTO students (name,description) 
+VALUES ('Matematika','PnP');
+INSERT INTO students (name,description) 
+VALUES ('Databáze','Hezký ale nebaví mě');
+
+ALTER TABLE subjects
+ADD shortname varchar(10);
+
+UPDATE subjects
+SET shortname = ''
+WHERE id_subjects = ;
