@@ -66,3 +66,22 @@ ADD shortname varchar(10);
 UPDATE subjects
 SET shortname = ''
 WHERE id_subjects = ;
+
+CREATE TABLE classrooms (
+  id_classroom int AUTO_INCREMENT,
+  number varchar(10) NOT NULL,
+  description text,
+  building int,
+  seats_count int,
+  is_computer_lab tiny int,
+  PRIMARY KEY (id_classroom)
+);
+
+INSERT INTO classrooms (number,description,building,seats_count,is_computer_lab) 
+VALUES ('6A','2. NEJ',1,20,0);
+INSERT INTO classrooms (number,description,building,seats_count,is_computer_lab) 
+VALUES ('5','Nevím',1,25,0);
+INSERT INTO classrooms (number,description,building,seats_count,is_computer_lab) 
+VALUES ('1','Asi',1,12,1);
+INSERT INTO classrooms (number,description,building,seats_count,is_computer_lab) 
+VALUES ('E621','To je super ale není to pro všechny no ;)',2,15,1);
