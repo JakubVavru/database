@@ -85,3 +85,21 @@ INSERT INTO classrooms (number,description,building,seats_count,is_computer_lab)
 VALUES ('1','Asi',1,12,1);
 INSERT INTO classrooms (number,description,building,seats_count,is_computer_lab) 
 VALUES ('E621','To je super ale není to pro všechny no ;)',2,15,1);
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+ALTER TABLE classrooms
+ADD UNIQUE (number);
+
+CREATE TABLE schedule (
+  id_schedule int AUTO_INCREMENT,
+  id_classroom int,
+  id_subjects int,
+  id_teacher int,
+  lesson_number int,
+  day_of_week tinyint(5),
+  PRIMARY KEY (id_schedule)
+);
+
+INSERT INTO schedule (id_classroom,id_subjects,id_teacher,lesson_number,day_of_week) 
+VALUES (3,2,1,1,2);
+/*A další mám v databázi :)*/
