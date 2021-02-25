@@ -103,3 +103,6 @@ CREATE TABLE schedule (
 INSERT INTO schedule (id_classroom,id_subjects,id_teacher,lesson_number,day_of_week) 
 VALUES (3,2,1,1,2);
 /*A další mám v databázi :)*/
+
+ALTER TABLE students
+ADD UNIQUE (email);
