@@ -106,3 +106,12 @@ VALUES (3,2,1,1,2);
 
 ALTER TABLE students
 ADD UNIQUE (email);
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+SELECT * FROM schedule sch
+JOIN teacher t ON sch.id_teacher = t.id_teacher;
+SELECT * FROM schedule sch
+JOIN students st ON sch.id_student = s.id_student;
+SELECT * FROM schedule sch
+JOIN subjects sub ON sch.id_subjects = sub.id_subjects;
+SELECT * FROM schedule sch
+JOIN classrooms cl ON sch.id_classroom = cl.id_classroom;
