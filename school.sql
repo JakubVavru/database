@@ -51,13 +51,13 @@ CREATE TABLE subjects (
   PRIMARY KEY (id_subjects)
 );
 
-INSERT INTO students (name,description) 
+INSERT INTO subjects (name,description) 
 VALUES ('Anglický Jazyk','Už umím nevím proč se to učím');
-INSERT INTO students (name,description) 
+INSERT INTO subjects (name,description) 
 VALUES ('Webové programování','Nejlepší předmět 10/10');
-INSERT INTO students (name,description) 
+INSERT INTO subjects (name,description) 
 VALUES ('Matematika','PnP');
-INSERT INTO students (name,description) 
+INSERT INTO subjects (name,description) 
 VALUES ('Databáze','Hezký ale nebaví mě');
 
 ALTER TABLE subjects
